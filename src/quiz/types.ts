@@ -1,5 +1,6 @@
 export type MultipleChoiceQuestion = {
   id: string;
+  name: string;
   type: "multiple-choice";
   prompt: string;
   choices: string[];
