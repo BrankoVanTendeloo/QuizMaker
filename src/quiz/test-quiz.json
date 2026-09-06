@@ -1,0 +1,88 @@
+{
+  "title": "Test Quiz",
+  "categories": [
+    {
+      "name": "Science",
+      "questions": [
+        {
+          "id": "science-100",
+          "type": "multiple-choice",
+          "prompt": "What planet do we live on?",
+          "choices": ["Mars", "Earth", "Venus", "Jupiter"],
+          "correctAnswer": "Earth"
+        },
+        {
+          "id": "science-200",
+          "type": "multiple-choice",
+          "prompt": "What is H2O?",
+          "choices": ["Oxygen", "Hydrogen", "Water", "Carbon dioxide"],
+          "correctAnswer": "Water"
+        },
+        {
+          "id": "science-300",
+          "type": "multiple-choice",
+          "prompt": "How many bones are in the adult human body?",
+          "choices": ["106", "206", "306", "406"],
+          "correctAnswer": "206"
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "questions": [
+        {
+          "id": "history-100",
+          "type": "multiple-choice",
+          "prompt": "Who was the first president of the United States?",
+          "choices": [
+            "George Washington",
+            "Abraham Lincoln",
+            "Thomas Jefferson",
+            "John Adams"
+          ],
+          "correctAnswer": "George Washington"
+        },
+        {
+          "id": "history-200",
+          "type": "multiple-choice",
+          "prompt": "In which year did World War II end?",
+          "choices": ["1939", "1941", "1945", "1950"],
+          "correctAnswer": "1945"
+        },
+        {
+          "id": "history-300",
+          "type": "multiple-choice",
+          "prompt": "Which ancient civilization built the pyramids at Giza?",
+          "choices": ["Romans", "Ancient Egyptians", "Greeks", "Vikings"],
+          "correctAnswer": "Ancient Egyptians"
+        }
+      ]
+    },
+    {
+      "name": "General Knowledge",
+      "questions": [
+        {
+          "id": "general-100",
+          "type": "multiple-choice",
+          "prompt": "How many days are there in a week?",
+          "choices": ["5", "6", "7", "8"],
+          "correctAnswer": "7"
+        },
+        {
+          "id": "general-200",
+          "type": "multiple-choice",
+          "prompt": "What is the capital of France?",
+          "choices": ["London", "Berlin", "Madrid", "Paris"],
+          "correctAnswer": "Paris"
+        },
+        {
+          "id": "general-300",
+          "type": "multiple-choice",
+          "prompt": "Which language is primarily spoken in Brazil?",
+          "choices": ["Spanish", "Portuguese", "French", "Italian"],
+          "correctAnswer": "Portuguese"
+        }
+      ]
+    }
+  ]
+}
