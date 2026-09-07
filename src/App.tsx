@@ -5,18 +5,13 @@ import type { Quiz } from "./quiz/types";
 import { QuizSelect } from "./screens/quizselect";
 
 function App() {
-	const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
+  const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
 
-	if (selectedQuiz) {
-		return <QuizBoard quiz={selectedQuiz} />;
-	}
+  if (selectedQuiz) {
+    return <QuizBoard quiz={selectedQuiz} />;
+  }
 
-	return (
-		<QuizSelect
-			quizzes={quizzes}
-			onSelect={setSelectedQuiz}
-		/>
-	);
+  return <QuizSelect quizzes={quizzes} onSelect={setSelectedQuiz} />;
 }
 
 export default App;
