@@ -1,6 +1,6 @@
+import { QuizBoard } from "./components/quizboard";
 import quiz from "./quiz/test-quiz.json";
 import type { Quiz } from "./quiz/types";
-import { QuizBoard } from "./components/quizboard";
 
 const testQuiz = quiz as Quiz;
 

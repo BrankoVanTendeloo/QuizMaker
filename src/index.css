@@ -5,3 +5,8 @@
 body {
   margin: 0;
 }
+
+.quiz-board td a {
+  display: block;
+  height: 100%;
+}

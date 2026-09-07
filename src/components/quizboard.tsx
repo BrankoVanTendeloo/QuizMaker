@@ -10,7 +10,7 @@ export function QuizBoard({ quiz }: QuizBoardProps) {
   );
 
   return (
-    <table>
+    <table className="quiz-board">
       <thead>
         <tr>
           {quiz.categories.map((category) => (
@@ -21,13 +21,17 @@ export function QuizBoard({ quiz }: QuizBoardProps) {
 
       <tbody>
         {Array.from({ length: rowCount }, (_, rowIndex) => (
-          <tr key={rowIndex}>
+          <tr
+            key={quiz.categories
+              .map((category) => category.questions[rowIndex]?.id ?? "")
+              .join("-")}
+          >
             {quiz.categories.map((category) => {
               const question = category.questions[rowIndex];
 
               return (
                 <td key={category.name}>
-                  {question?.name ?? ""}
+                  {question ? <a href="#">{question.name}</a> : ""}
                 </td>
               );
             })}
