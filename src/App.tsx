@@ -1,10 +1,8 @@
 import { useState } from "react";
-import quiz from "./quiz/test-quiz.json";
-import type { Quiz } from "./quiz/types";
 import { QuizBoard } from "./components/quizboard";
+import { quizzes } from "./quiz/loadquizzes";
+import type { Quiz } from "./quiz/types";
 import { QuizSelect } from "./screens/quizselect";
-
-const testQuiz = quiz as Quiz;
 
 function App() {
 	const [selectedQuiz, setSelectedQuiz] = useState<Quiz | null>(null);
@@ -15,7 +13,7 @@ function App() {
 
 	return (
 		<QuizSelect
-			quizzes={[testQuiz]}
+			quizzes={quizzes}
 			onSelect={setSelectedQuiz}
 		/>
 	);
